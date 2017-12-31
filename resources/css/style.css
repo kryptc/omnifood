@@ -79,6 +79,13 @@ h3 {
     margin-bottom: 15px;
 }
 
+.section-features .row .long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom:20px;
+}
+
 .long-copy {
     line-height: 145%;
     width: 70%;
@@ -225,10 +232,26 @@ header {
 .meal-photo{
     width:100%;
     margin:0;
+    overflow: hidden;
+    background-color:black;
     
 }
 
 .meal-photo img{
     width:100%;
     height:auto;
+    transform:scale(1.15);
+    opacity: 0.7;
+    transition:all 0.5s ease;
+    
+}
+
+.meal-photo img:hover{
+    transform:scale(1.05);
+    opacity:1;
+    transition:all 0.5s ease;
+}
+
+.section-meals{
+    padding:0;
 }
